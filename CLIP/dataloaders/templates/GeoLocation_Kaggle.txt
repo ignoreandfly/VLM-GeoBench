@@ -1,0 +1,45 @@
+a street scene in {}.
+a landscape in {}.
+a view from {}.
+a photograph taken in {}.
+a rural area in {}.
+an urban neighborhood in {}.
+a road in {}.
+a typical street from {}.
+a countryside scene in {}.
+a mountain view in {}.
+a coastal area in {}.
+a tourist spot in {}.
+a village in {}.
+a capital city in {}.
+a small town in {}.
+a marketplace in {}.
+a suburb in {}.
+a local park in {}.
+a cultural site in {}.
+a landmark in {}.
+a natural scene in {}.
+a road sign in {}.
+an aerial view of {}.
+a drone shot in {}.
+a house in {}.
+a building in {}.
+a scene from {}.
+a travel photo from {}.
+a screenshot from GeoGuessr in {}.
+a snapshot from {}.
+a cityscape in {}.
+a hiking trail in {}.
+a forest in {}.
+an empty road in {}.
+the streets of {}.
+the countryside of {}.
+the skyline of {}.
+the coastal regions of {}.
+the mountains of {}.
+the neighborhoods of {}.
+the architecture in {}.
+the highways in {}.
+the forests in {}.
+the deserts of {}.
+the farmlands of {}.
