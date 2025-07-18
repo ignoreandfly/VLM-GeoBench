@@ -14,7 +14,7 @@ from torchvision.datasets.vision import VisionDataset
 class GeoLocation_Kaggle(VisionDataset):
     def __init__(
         self,
-        root = "/data/azfarm/siddhant/Geolocalization_UCF/",
+        root = "/data/azfarm/siddhant/Geolocalization_UCF/VLM-GeoBench",
         train = False,
         transform = None, 
         class_info = "/data/azfarm/siddhant/Geolocalization_UCF/GeoLocation_kaggle.txt", 
@@ -26,7 +26,7 @@ class GeoLocation_Kaggle(VisionDataset):
         self.class_info = class_info 
         self.img_dir = os.path.join(self.root, "GeoLocation_Kaggle")
         self.split = os.path.join(self.root, "GeoLocation_kaggle.json")
-
+        # self.split = "/data/azfarm/siddhant/Geolocalization_UCF/VLM-GeoBench/CLIP/datasets/GeoLocation_Kaggle/GeoLocation_kaggle.json"
         self.read_data()
 
         if self.train:

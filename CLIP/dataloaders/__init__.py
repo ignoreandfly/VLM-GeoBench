@@ -13,7 +13,7 @@ def get_dataloader(dataset_name, transform=None, loader_type = "test", transform
     
     
     if dataset_name == "geolocation_kaggle":
-        test = GeoLocation_Kaggle(root="/data/azfarm/siddhant/Geolocalization_UCF", 
+        test = GeoLocation_Kaggle(root="../datasets/", 
             train=False, 
             transform=transform,
         )

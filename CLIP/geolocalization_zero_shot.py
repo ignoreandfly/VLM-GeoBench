@@ -70,14 +70,18 @@ def read_txt(file_location):
     except: pass
     return content
 
-def extend_user_path(path):
+def extend_user_path(path, default_behavior = False):
     """
     Extend the user path to the home directory.
     """
-    home_directory = os.path.expanduser('~')
-    if path.startswith('~'):
-        return path.replace("~", home_directory)
-    return path
+    if default_behavior == True:
+        home_directory = os.path.expanduser('~')
+        if path.startswith('~'):
+            return path.replace("~", home_directory)
+        return path
+    else:
+        return path.replace("~", os.path.join("/data", "azfarm", "siddhant", "Geolocalization_UCF"))
+
 
 def get_classes_prompts(args):
     args.class_dir = extend_user_path(args.class_dir)
@@ -153,10 +157,9 @@ def parse_args(input_args=None):
     
     parser.add_argument("--dataset",
         type=str,
-        default="cifar10",
+        default="geolocation_kaggle",
         help="Dataset name (small leter recombedded)",
-        choices=['imagenet1k', 'imagenet_a', 'imagenet_r', 'imagenet_sketch', 'imagenet_v2', 'caltech101', 'dtd', 'food101', 'fgvc_aircraft',\
-            'sun397', 'pets', 'cars', 'flowers', 'eurosat', 'ucf101'],
+        choices=['geolocation_kaggle'],
     )
     parser.add_argument("--batch_size",
         type=int,
@@ -191,12 +194,12 @@ def parse_args(input_args=None):
     )
     parser.add_argument("--class_dir",
         type=str,
-        default="~/LR0.FM/CLIP/dataloaders/classes/",
+        default="~/VLM-GeoBench/CLIP/dataloaders/classes/",
         help="input image resolution for model",
     )
     parser.add_argument("--templates_dir",
         type=str,
-        default="~/LR0.FM/CLIP/dataloaders/templates/",
+        default="~/VLM-GeoBench/CLIP/dataloaders/templates/",
         help="input image resolution for model",
     )
     if input_args is not None: args = parser.parse_args(input_args)
