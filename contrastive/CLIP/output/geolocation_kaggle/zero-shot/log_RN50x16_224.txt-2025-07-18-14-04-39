@@ -1,0 +1,19 @@
+ Choosen backbone: RN50x16
+ Model parameters: 290,979,217
+ Input image resolution 224, Model resolution: 384
+ Context length: 77
+ Vocab size: 49408
+ Classes: 124, prompt templates: 45
+ Dataset: GEOLOCATION_KAGGLE.
+ Transformation test: Compose(
+    Resize(size=384, interpolation=bicubic, max_size=None, antialias=warn)
+    CenterCrop(size=(384, 384))
+    <function _convert_image_to_rgb at 0x7f0a8bcbc8b0>
+    ToTensor()
+    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))
+)
+ Transformation train: None
+ Dataloader type: test.
+ Test images 49997
+Top-1 accuracy: 48.24
+Top-5 accuracy: 77.82

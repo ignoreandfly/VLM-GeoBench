@@ -1,0 +1,2 @@
+| distributed init (rank 0, word 1): env://
+Creating dataset geolocation_kaggle

@@ -1,0 +1,1 @@
+ Choosen backbone: ViT-L/14@336px

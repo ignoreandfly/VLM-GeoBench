@@ -1,0 +1,1 @@
+ Choosen backbone: ViT-B/16

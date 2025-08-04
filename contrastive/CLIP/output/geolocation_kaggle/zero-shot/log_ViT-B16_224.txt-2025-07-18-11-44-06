@@ -1,0 +1,19 @@
+ Choosen backbone: ViT-B/16
+ Model parameters: 149,620,737
+ Input image resolution 224, Model resolution: 224
+ Context length: 77
+ Vocab size: 49408
+ Classes: 124, prompt templates: 45
+ Dataset: GEOLOCATION_KAGGLE.
+ Transformation test: Compose(
+    Resize(size=224, interpolation=bicubic, max_size=None, antialias=warn)
+    CenterCrop(size=(224, 224))
+    <function _convert_image_to_rgb at 0x7f41a9b508b0>
+    ToTensor()
+    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))
+)
+ Transformation train: None
+ Dataloader type: test.
+ Test images 49997
+Top-1 accuracy: 48.77
+Top-5 accuracy: 78.41
