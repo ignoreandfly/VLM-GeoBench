@@ -2,7 +2,7 @@
 
 **VLM-GeoBench** is a benchmark designed to evaluate Vision-Language Models (VLMs) on real-world geolocation tasks using images from the GeoGuessr game and similar sources. It assesses how well VLMs can localize or identify countries based on visual content and prompt-based natural language reasoning.
 
-> **Note**: This repository is heavily based on [LR0.FM](https://github.com/shyammarjit/LR0.FM/) — we extend and adapt its structure for geolocation-specific evaluation.
+> **Note**: The contrastive section of the repository is heavily based on [LR0.FM](https://github.com/shyammarjit/LR0.FM/) — we extend and adapt its structure for geolocation-specific evaluation.
 
 
 ## 🔍 Key Features
